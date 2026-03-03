@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="my">
-
 <head>
     <meta charset="UTF-8">
-    <title>Event Schedule</title>
+    <title>သင်တန်းအစီအစဥ်</title>
     <style>
         body {
             font-family: "Noto Sans Myanmar", sans-serif;
             background-color: #f4f6f9;
             margin: 0;
             padding: 20px;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
             background: #ffffff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
         }
 
         h2 {
@@ -27,144 +32,192 @@
             padding: 10px;
             border-radius: 6px;
             font-size: 18px;
+            margin-top: 30px;
         }
 
-        .schedule {
-            margin-bottom: 30px;
+        .schedule{
+            margin-left: 20px;
         }
 
-        .item {
+        .schedule h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .schedule .item {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
+            padding: 8px 0;
             border-bottom: 1px solid #eee;
         }
 
         .time {
             font-weight: bold;
-            color: #34495e;
             width: 35%;
+            color: #34495e;
         }
 
         .activity {
             width: 60%;
         }
 
-        .item:last-child {
-            border-bottom: none;
+        .contact-item {
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .rules li,
+        .notes li,
+        .contact-list li {
+            margin-bottom: 8px;
         }
 
         @media (max-width: 600px) {
-            .item {
+            .schedule .item {
                 flex-direction: column;
             }
 
-            .time,
-            .activity {
+            .time, .activity {
                 width: 100%;
             }
         }
     </style>
 </head>
-
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="schedule">
-            <h2>၁၆.၃.၂၀၂၆ (တနင်္လာနေ့)</h2>
-            <div class="item">
-                <div class="time">3:00 - 4:00</div>
-                <div class="activity">မှတ်ပုံတင်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">4:00 - 4:30</div>
-                <div class="activity">ညနေစာသုံးဆောင်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">4:30 - 5:00</div>
-                <div class="activity">ဝတ်ပြုကိုးကွယ်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">5:00 - 6:00</div>
-                <div class="activity">မိတ်ဆက်ခြင်း၊ အသင်းခွဲခြင်း နှင့် အလံအပ်နှံခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">6:00 - 7:00</div>
-                <div class="activity">ဂိမ်းကစားခြင်း</div>
-            </div>
-        </div>
+    <h1>သင်တန်းအစီအစဥ်နှင့် အသိပေးချက်များ</h1>
 
-        <div class="schedule">
-            <h2>၁၇.၃.၂၀၂၆ - ၂၀.၃.၂၀၂၆</h2>
-            <div class="item">
-                <div class="time">8:00 - 8:30</div>
-                <div class="activity">နံနက်ဝတ်ပြုကိုးကွယ်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">8:30 - 9:00</div>
-                <div class="activity">မနက်စာသုံးဆောင်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">9:00 - 10:30</div>
-                <div class="activity">သင်ခန်းစာသင်ကြားခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">10:30 - 11:00</div>
-                <div class="activity">သီချင်းသင်ကြားခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">11:00 - 12:00</div>
-                <div class="activity">Special Talk</div>
-            </div>
-            <div class="item">
-                <div class="time">12:00 - 1:00</div>
-                <div class="activity">နေ့လည်စာသုံးဆောင်ခြင်း၊ အနားယူခြင်း၊ လေ့ကျင့်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">1:00 - 2:00</div>
-                <div class="activity">အကသင်ကြားခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">2:00 - 2:30</div>
-                <div class="activity">သီချင်းသင်ကြားခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">2:30 - 3:00</div>
-                <div class="activity">လေ့ကျင့်ချိန်</div>
-            </div>
-            <div class="item">
-                <div class="time">3:00 - 4:00</div>
-                <div class="activity">ဂိမ်းကစားခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">4:00 - 4:30</div>
-                <div class="activity">ရေချိုးချိန်</div>
-            </div>
-            <div class="item">
-                <div class="time">4:30 - 5:00</div>
-                <div class="activity">ညနေစာသုံးဆောင်ချိန်</div>
-            </div>
-            <div class="item">
-                <div class="time">5:00 - 7:00</div>
-                <div class="activity">ညပိုင်းအစီအစဥ်</div>
-            </div>
-        </div>
+    <!-- Schedule Section -->
+    <h2>အစီအစဥ်</h2>
 
-        <div class="schedule">
-            <h2>၂၁.၃.၂၀၂၆ (စနေနေ့)</h2>
-            <div class="item">
-                <div class="time">8:00 - 8:30</div>
-                <div class="activity">နံနက်စာသုံးဆောင်ခြင်း</div>
-            </div>
-            <div class="item">
-                <div class="time">8:30 - 10:30</div>
-                <div class="activity">ပိတ်ပွဲ နှင့် ဆုချီးမြှင့်ခြင်း</div>
-            </div>
-        </div>
-
+    <div class="schedule">
+        <h3>၁၆.၃.၂၀၂၆ (တနင်္လာနေ့)</h3>
+        <div class="item"><div class="time">3:00 - 4:00</div><div class="activity">မှတ်ပုံတင်ခြင်း</div></div>
+        <div class="item"><div class="time">4:00 - 4:30</div><div class="activity">ညနေစာသုံးဆောင်ခြင်း</div></div>
+        <div class="item"><div class="time">4:30 - 5:00</div><div class="activity">ဝတ်ပြုကိုးကွယ်ခြင်း</div></div>
+        <div class="item"><div class="time">5:00 - 6:00</div><div class="activity">မိတ်ဆက်ခြင်း၊ အသင်းခွဲခြင်း နှင့် အလံအပ်နှံခြင်း</div></div>
+        <div class="item"><div class="time">6:00 - 7:00</div><div class="activity">ဂိမ်းကစားခြင်း</div></div>
     </div>
 
-</body>
+    <div class="schedule">
+        <h3>၁၇.၃.၂၀၂၆ - ၂၀.၃.၂၀၂၆</h3>
+        <div class="item"><div class="time">8:00 - 8:30</div><div class="activity">နံနက်ဝတ်ပြုကိုးကွယ်ခြင်း</div></div>
+        <div class="item"><div class="time">8:30 - 9:00</div><div class="activity">မနက်စာသုံးဆောင်ခြင်း</div></div>
+        <div class="item"><div class="time">9:00 - 10:30</div><div class="activity">သင်ခန်းစာသင်ကြားခြင်း</div></div>
+        <div class="item"><div class="time">10:30 - 11:00</div><div class="activity">သီချင်းသင်ကြားခြင်း</div></div>
+        <div class="item"><div class="time">11:00 - 12:00</div><div class="activity">Special Talk</div></div>
+        <div class="item"><div class="time">12:00 - 1:00</div><div class="activity">နေ့လည်စာသုံးဆောင်ခြင်း၊ အနားယူခြင်း၊ လေ့ကျင့်ခြင်း</div></div>
+        <div class="item"><div class="time">1:00 - 2:00</div><div class="activity">အကသင်ကြားခြင်း</div></div>
+        <div class="item"><div class="time">2:00 - 2:30</div><div class="activity">သီချင်းသင်ကြားခြင်း</div></div>
+        <div class="item"><div class="time">2:30 - 3:00</div><div class="activity">လေ့ကျင့်ချိန်</div></div>
+        <div class="item"><div class="time">3:00 - 4:00</div><div class="activity">ဂိမ်းကစားခြင်း</div></div>
+        <div class="item"><div class="time">4:00 - 4:30</div><div class="activity">ရေချိုးချိန်</div></div>
+        <div class="item"><div class="time">4:30 - 5:00</div><div class="activity">ညနေစာသုံးဆောင်ချိန်</div></div>
+        <div class="item"><div class="time">5:00 - 7:00</div><div class="activity">ညပိုင်းအစီအစဥ်</div></div>
+    </div>
 
+    <div class="schedule">
+        <h3>၂၁.၃.၂၀၂၆ (စနေနေ့)</h3>
+        <div class="item"><div class="time">8:00 - 8:30</div><div class="activity">နံနက်စာသုံးဆောင်ခြင်း</div></div>
+        <div class="item"><div class="time">8:30 - 10:30</div><div class="activity">ပိတ်ပွဲ နှင့် ဆုချီးမြှင့်ခြင်း</div></div>
+    </div>
+
+    <!-- Contact Section -->
+    <h2>တာဝန်ရှိသူများ၏ဖုန်းနံပါတ်များ</h2>
+
+    <div class="contact-table">
+        <div class="contact-row">
+            <div class="contact-name">နန့်အက်စတာဦး (ဥက္ကဌ)</div>
+            <div class="contact-phone">၀၉၇၇၈၅၁၅၃၄၀</div>
+        </div>
+        <div class="contact-row">
+            <div class="contact-name">စောဂျက်စင်ထူး (အတွင်းရေးမှူး)</div>
+            <div class="contact-phone">၀၉၉၇၂၉၈၈၅၆၄</div>
+        </div>
+        <div class="contact-row">
+            <div class="contact-name">စလင်းထက်ငြိမ်း (တွဲဖက်အတွင်းရေးမှူး)</div>
+            <div class="contact-phone">၀၉၆၈၉၇၃၆၄၄၁</div>
+        </div>
+        <div class="contact-row">
+            <div class="contact-name">နန့်အက်စတာခါးရာမိုး (သင်တန်းမှူး)</div>
+            <div class="contact-phone">၀၉၉၈၃၅၇၁၆၇၈</div>
+        </div>
+        <div class="contact-row">
+            <div class="contact-name">နန့်နှင်းနှရဏီဆိုင်</div>
+            <div class="contact-phone">၀၉၉၅၂၇၀၂၄၄၉</div>
+        </div>
+    </div>
+
+    <style>
+        .contact-table {
+            display: table;
+            width: 55%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .contact-row {
+            display: table-row;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-name, .contact-phone {
+            display: table-cell;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        .contact-name {
+            font-weight: bold;
+            color: #2c3e50;
+            width: 70%;
+        }
+
+        .contact-phone {
+            text-align: right;
+            color: #34495e;
+            width: 30%;
+        }
+
+        @media (max-width: 600px) {
+            .contact-name, .contact-phone {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            .contact-row {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <!-- Rules Section -->
+    <h2>သင်တန်းစည်းမျဥ်းစည်းကမ်းချက်များ</h2>
+    <ol class="rules">
+        <li>သင်တန်းကာလ အစအဆုံးပါဝင်တက်‌ရောက်ရမည်။</li>
+        <li>အရေးကြီးကိစ္စရပ်များရှိ၍ သင်တန်းအချိန်ပြည့်မတက်ရောက်နိုင်ပါက သင်တန်းမှူးထံတွင် ခွင့်ပြုချက်တောင်းခံရမည်။</li>
+        <li>သင်တန်းကာလအတွင်း သင်တန်းအဆောက်အဦးမှ ခွင့်ပြုချက်မရှိပဲ လုံးဝထွက်ခွါခြင်းမပြုရ။</li>
+        <li>သင်တန်းသား/သူအချင်းချင်း ခိုက်ရန်ဖြစ်ပွါးခြင်း၊ ရန်လိုပြုမူခြင်း လုံးဝမပြုရ။</li>
+        <li>မိမိအသင်းတော်၏ပုံရိပ်အား ထိခိုက်နစ်နာစေမည့်အပြုအမူများလုံးဝမပြုလုပ်ရ။</li>
+        <li>အဖိုးတန်ရတနာပစ္စည်းများ ယူဆောင်လာပါက မိမိတာဝန်သာဖြစ်သည်။</li>
+        <li>သင်တန်းမှူးနှင့် ဆရာ၊ဆရာမများ၏ ညွှန်ကြားချက်များကို တသွေမတိမ်းလိုက်နာရမည်။</li>
+        <li>သင်တန်းမှအခါအားလျော်စွာထုတ်ပြန်သည့်စည်းကမ်းများကို တိကျစွာလိုက်နာရမည်။</li>
+    </ol>
+
+    <!-- Notes Section -->
+    <h2>မှတ်ချက်</h2>
+    <ol class="notes">
+        <li>သင်တန်းဖွင့်ပွဲနေ့တွင် မိမိအစီအစဥ်ဖြင့်သာလာရောက်ရန်။</li>
+        <li>နေ့စဥ် အင်္ကျီအပိုတစ်စုံယူဆောင်လာရန်။</li>
+        <li>အပြန်ခရီးတွင် အုပ်ထိန်းသူများလာကြိုပါက သင်တန်းမှပြန်လည်ပို့ဆောင်ပေးမည်မဟုတ်ပါ။</li>
+    </ol>
+
+</div>
+
+</body>
 </html>
